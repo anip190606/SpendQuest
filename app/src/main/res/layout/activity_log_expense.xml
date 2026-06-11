@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_card"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvLevelBadge"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:text="LVL 1"
+                android:textColor="@color/bg_dark"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/yellow_primary"/>
+
+            <TextView
+                android:id="@+id/tvCharName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Commoner"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingStart="12dp"/>
+
+            <TextView
+                android:id="@+id/tvExpBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 / 1000 EXP"
+                android:textColor="@color/yellow_primary"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select type"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnTypeExpense"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Expense"
+                android:textStyle="bold"
+                android:textColor="@color/bg_dark"
+                android:backgroundTint="@color/yellow_primary"/>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btnTypeIncome"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Income"
+                android:textStyle="bold"
+                android:textColor="@color/text_grey"
+                android:backgroundTint="@color/bg_card"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_grey"
+            android:background="@color/bg_card"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/bg_card"
+            android:popupBackground="@color/bg_card"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_card"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="🏅"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvExpGained"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+50 EXP per expense"
+                    android:textColor="@color/yellow_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max 200 EXP per day from logging"
+                    android:textColor="@color/text_grey"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutDemoExpControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo mode only"
+                android:textColor="@color/yellow_primary"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add EXP directly to test level and title changes"
+                android:textColor="@color/text_grey"
+                android:textSize="12sp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etDemoExpAmount"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter demo EXP amount"
+                android:inputType="number"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_grey"
+                android:background="@color/bg_dark"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnAddDemoExp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="+ ADD DEMO EXP"
+                android:textStyle="bold"
+                android:textColor="@color/bg_dark"
+                android:backgroundTint="@color/yellow_primary"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="▶  SUBMIT"
+            android:textColor="@color/bg_dark"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="@color/yellow_primary"/>
+
+    </LinearLayout>
+</ScrollView>

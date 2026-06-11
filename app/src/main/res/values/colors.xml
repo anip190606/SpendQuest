@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0D1117</color>
+    <color name="bg_card">#161B22</color>
+    <color name="yellow_primary">#F5C518</color>
+    <color name="yellow_dark">#D4A017</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_grey">#8B949E</color>
+    <color name="color_spent">#FF6B6B</color>
+    <color name="color_savings">#4FC3F7</color>
+    <color name="color_success">#56D364</color>
+    <color name="boss_health">#56D364</color>
+    <color name="nav_selected">#F5C518</color>
+    <color name="nav_unselected">#8B949E</color>
+</resources>

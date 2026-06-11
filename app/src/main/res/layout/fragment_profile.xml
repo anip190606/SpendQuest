@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingBottom="80dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_card"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HERO PROFILE"
+                android:textColor="@color/yellow_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 1"
+                android:textColor="@color/text_white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commoner"
+                android:textColor="@color/yellow_primary"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressEXPProfile"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:max="500"
+                android:progress="0"
+                android:progressTint="@color/yellow_primary"
+                android:progressBackgroundTint="@color/bg_dark"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileEXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 / 500 XP"
+                android:textColor="@color/text_grey"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- Stats Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_card"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUEST STATS"
+                android:textColor="@color/yellow_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Email"
+                    android:textColor="@color/text_grey" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="—" android:textColor="@color/text_white" android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Current Day"
+                    android:textColor="@color/text_grey" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvProfileDay"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Day 1" android:textColor="@color/text_white" android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Monthly Budget"
+                    android:textColor="@color/text_grey" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvProfileBudget"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RM 0.00" android:textColor="@color/text_white"
+                    android:textSize="14sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Total Spent"
+                    android:textColor="@color/text_grey" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvProfileSpent"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RM 0.00" android:textColor="@color/color_spent"
+                    android:textSize="14sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Current Savings"
+                    android:textColor="@color/text_grey" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvProfileSavings"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RM 0.00" android:textColor="@color/color_savings"
+                    android:textSize="14sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Savings Goal"
+                    android:textColor="@color/text_grey" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvProfileGoal"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RM 0.00" android:textColor="@color/color_savings"
+                    android:textSize="14sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Demo Mode toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_card"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Mode"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Separate sandbox — real progress untouched"
+                    android:textColor="@color/text_grey"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchDemoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/yellow_primary"
+                android:trackTint="@color/bg_dark"/>
+        </LinearLayout>
+
+        <!-- Reset Demo Button — hidden by default, shown in demo mode -->
+        <Button
+            android:id="@+id/btnResetDemo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🎮 RESET DEMO"
+            android:textColor="@color/text_white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#C0392B"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="LOGOUT"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/bg_card"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="RESET QUEST"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:backgroundTint="#C0392B"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

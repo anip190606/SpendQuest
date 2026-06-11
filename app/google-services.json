@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "240995623635",
+    "project_id": "spendquest-770f0",
+    "storage_bucket": "spendquest-770f0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240995623635:android:094af9472a652edc506a26",
+        "android_client_info": {
+          "package_name": "com.example.spendquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARZ_lIqaXPDV0umtVKPzTvkWCgOjArFTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
